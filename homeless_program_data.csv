@@ -1,0 +1,27 @@
+site_id,site_name,region,total_clients,avg_length_of_stay_days,permanent_housing_exits,temporary_housing_exits,unknown_exits,avg_days_in_shelter,clients_without_case_plans,total_bed_capacity,occupancy_rate,new_admissions_month,successful_exits_month
+1,Downtown Emergency Shelter,San Francisco,145,89,12,8,5,67,23,150,0.97,18,12
+2,Mission District Housing First,San Francisco,78,156,15,3,2,134,8,80,0.98,9,15
+3,Tenderloin Navigation Center,San Francisco,234,67,28,12,8,45,45,250,0.94,32,28
+4,Castro Transitional Housing,San Francisco,56,203,18,4,1,178,3,60,0.93,7,18
+5,Richmond Family Shelter,San Francisco,89,134,11,6,4,98,15,95,0.94,12,11
+6,Sunset Veterans Housing,San Francisco,67,178,14,2,3,156,5,70,0.96,8,14
+7,Oakland Main Shelter,Oakland,198,76,22,15,9,58,38,200,0.99,25,22
+8,Berkeley Emergency Housing,Berkeley,123,98,16,7,6,78,19,130,0.95,15,16
+9,Fremont Family Center,Fremont,45,167,8,3,2,145,6,50,0.90,6,8
+10,Hayward Transitional,Hayward,87,145,13,5,4,123,11,90,0.97,11,13
+11,San Mateo Shelter Plus,San Mateo,156,112,19,8,7,89,24,160,0.98,20,19
+12,Redwood City Housing,Redwood City,78,189,12,4,3,167,9,80,0.98,10,12
+13,Palo Alto Emergency,Palo Alto,34,234,6,2,1,201,4,40,0.85,4,6
+14,Mountain View Rapid Rehousing,Mountain View,67,98,11,6,3,76,8,70,0.96,9,11
+15,Sunnyvale Family Services,Sunnyvale,89,156,14,5,4,134,12,95,0.94,12,14
+16,San Jose Central,San Jose,267,87,31,18,11,65,52,280,0.95,35,31
+17,San Jose East Side,San Jose,145,134,17,9,6,112,22,150,0.97,19,17
+18,Santa Clara Navigation,Santa Clara,98,167,13,6,5,145,16,100,0.98,13,13
+19,Milpitas Emergency Housing,Milpitas,56,198,8,3,2,176,7,60,0.93,7,8
+20,Gilroy Transitional,Gilroy,43,223,6,2,2,198,5,45,0.96,5,6
+21,Marin County Shelter,San Rafael,78,145,12,5,4,123,10,80,0.98,10,12
+22,Novato Family Housing,Novato,45,178,7,3,2,156,6,50,0.90,6,7
+23,Petaluma Emergency,Petaluma,67,134,10,4,3,112,9,70,0.96,9,10
+24,Santa Rosa Main,Santa Rosa,123,98,18,8,6,76,17,130,0.95,16,18
+25,Vallejo Transitional,Vallejo,89,167,13,6,4,145,13,95,0.94,12,13
+26,Fairfield Emergency,Fairfield,56,189,8,3,3,167,8,60,0.93,7,8

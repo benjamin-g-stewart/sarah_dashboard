@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="dashboard-header">
+        <div class="header-left">
+            <div class="org-logo">🏠</div>
+            <div class="org-info">
+                <div class="org-name">Bay Area Homeless Services</div>
+                <div class="dashboard-title">PROGRAM DASHBOARD</div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="site-name-block" id="siteNameBlock">
+                <select id="siteSelect">
+                    <option value="all">All Sites Overview</option>
+                </select>
+            </div>
+            <div class="time-period-block">
+                February 2024
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-content">
+        
+        <!-- Section 1: Housing Outcomes -->
+        <section class="dashboard-section">
+            <h2 class="section-title">Section 1 – Housing Outcomes</h2>
+            
+            <div class="metrics-container">
+                <!-- Average Length of Stay -->
+                <div class="metric-block">
+                    <h3 class="metric-title">Average Length of Stay</h3>
+                    <div class="metric-value">
+                        <span class="primary-number" id="avgLengthSite">--</span>
+                        <span class="unit">days</span>
+                    </div>
+                    <div class="comparison-line">
+                        Organization Average: <span id="avgLengthOrg">--</span> days
+                    </div>
+                    <div class="metric-caption">
+                        Average number of days clients stay in program before exit
+                    </div>
+                </div>
+
+                <!-- Exit to Permanent Housing -->
+                <div class="metric-block">
+                    <h3 class="metric-title">Exit to Permanent Housing</h3>
+                    <div class="metric-value">
+                        <span class="primary-number" id="permanentHousingSite">--%</span>
+                    </div>
+                    <div class="comparison-line">
+                        Organization Average: <span id="permanentHousingOrg">--%</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="exitDestinationsChart"></canvas>
+                    </div>
+                    <div class="metric-caption">
+                        Percentage of clients exiting to permanent housing solutions
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Program Operations -->
+        <section class="dashboard-section">
+            <h2 class="section-title">Section 2 – Program Operations</h2>
+            
+            <div class="metrics-container">
+                <!-- Occupancy Rate -->
+                <div class="metric-block">
+                    <h3 class="metric-title">Occupancy Rate</h3>
+                    <div class="metric-value">
+                        <span class="primary-number" id="occupancySite">--%</span>
+                    </div>
+                    <div class="comparison-line">
+                        Organization Average: <span id="occupancyOrg">--%</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="occupancyChart"></canvas>
+                    </div>
+                    <div class="metric-caption">
+                        Current bed utilization rate across all programs
+                    </div>
+                </div>
+
+                <!-- Average Days in Shelter -->
+                <div class="metric-block">
+                    <h3 class="metric-title">Average Days in Shelter</h3>
+                    <div class="metric-value">
+                        <span class="primary-number" id="daysShelterSite">--</span>
+                        <span class="unit">days</span>
+                    </div>
+                    <div class="comparison-line">
+                        Organization Average: <span id="daysShelterOrg">--</span> days
+                    </div>
+                    <div class="metric-caption">
+                        Average shelter stay duration for current clients
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Case Management -->
+        <section class="dashboard-section">
+            <h2 class="section-title">Section 3 – Case Management</h2>
+            
+            <div class="metrics-container">
+                <!-- Clients Without Case Plans -->
+                <div class="metric-block">
+                    <h3 class="metric-title">Clients Without a Case Plan</h3>
+                    <div class="metric-value">
+                        <span class="primary-number" id="noCasePlanSite">--%</span>
+                    </div>
+                    <div class="comparison-line">
+                        Organization Average: <span id="noCasePlanOrg">--%</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="casePlanChart"></canvas>
+                    </div>
+                    <div class="metric-caption">
+                        Percentage of active clients without completed case plans
+                    </div>
+                </div>
+
+                <!-- Monthly Performance -->
+                <div class="metric-block">
+                    <h3 class="metric-title">Monthly Admissions & Exits</h3>
+                    <div class="chart-container">
+                        <canvas id="monthlyPerformanceChart"></canvas>
+                    </div>
+                    <div class="metric-caption">
+                        New admissions vs. successful exits for current month
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Performance Summary -->
+        <section class="dashboard-section">
+            <h2 class="section-title">Section 4 – Performance Summary</h2>
+            
+            <div class="table-container">
+                <table class="performance-table" id="performanceTable">
+                    <thead>
+                        <tr>
+                            <th>Site Name</th>
+                            <th>Region</th>
+                            <th>Total Clients</th>
+                            <th>Avg Length of Stay</th>
+                            <th>Permanent Housing %</th>
+                            <th>Occupancy Rate</th>
+                            <th>Without Case Plans</th>
+                            <th>Performance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
